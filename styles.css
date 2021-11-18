@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(120deg, #f6d365, #d88771);
+  background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
   font-family: "Poppins", sans-serif;
   color: white;
   min-height: 100vh;
@@ -32,14 +32,14 @@ form button {
 }
 
 form button {
-  color: #d88771;
+  color: rgba(48,207,208,1);
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 form button:hover {
-  background: #d88771;
+  background: rgba(48,207,208,1);
   color: white;
 }
 
@@ -71,7 +71,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background: rgb(175, 174, 177);
   color: white;
   border: none;
   padding: 1rem;
@@ -100,3 +100,41 @@ form button:hover {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: rgb(175, 174, 177);
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: rgb(175, 174, 177);
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 1s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: rgba(48,207,208,1);
+}
+
