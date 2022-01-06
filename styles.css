@@ -6,13 +6,13 @@
 
 body {
   background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
-  font-family: "Poppins", sans-serif;
+  font-family: 'Meow Script', cursive;;
   color: white;
   min-height: 100vh;
 }
 
 header {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 header,
@@ -58,7 +58,7 @@ form button:hover {
   margin: 0.5rem;
   background: white;
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,4 +137,5 @@ select {
   background: white;
   color: rgba(48,207,208,1);
 }
+
 
